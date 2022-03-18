@@ -6,14 +6,15 @@ import Gallery from "./components/Gallery"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}/>
-      <Route path="/gallery" element={<Gallery/>}/> 
-      <Route path="*" element={<App />}/>
-    </Routes>
-  </BrowserRouter>,
+ReactDOM.render((
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}/>
+        <Route path="/gallery" element={<Gallery/>}/> 
+        <Route path="*" element={<App />}/>
+      </Routes>
+    </BrowserRouter>
+  ),
   document.getElementById("root")
 );
 
