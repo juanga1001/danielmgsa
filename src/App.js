@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Publications from "./components/Publications";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import {scroller} from "react-scroll";
+
 
 function App() {
+  function scrollToSection(section) {
+    console.log(section);
+    scroller.scrollTo(section, {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-container">
+      <nav>
+        <Navbar handleScroll={scrollToSection} />
+      </nav>
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Publications />
+        <Contact />
+      </main>
+      <footer>
+        <Footer handleScroll={scrollToSection} />
+      </footer>
     </div>
   );
 }
