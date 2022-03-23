@@ -529,6 +529,19 @@ input::placeholder, textarea::placeholder {
   font-size: 0.8rem;
 }
 
+input[type=submit] {
+  width: 130px;
+  height: 40px;
+  background-color: #273f27;
+  color: #fff;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
 textarea {
   width: 95%;
