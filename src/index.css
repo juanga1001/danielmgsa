@@ -55,7 +55,7 @@ p {
 }
 
 button,
-.btn-form {
+.btn-form, input[type=button], input[type=submit], input[type=reset] {
   width: 130px;
   height: 40px;
   background-color: #273f27;
@@ -483,7 +483,6 @@ footer {
   background-image: url("https://i.postimg.cc/vHx4RhrM/img-27.jpg");
   background-size: cover;
   background-position: center;
-  background-color: rgba(39, 63, 39, 0.2);
   width: 100%;
   align-self: center;
 }
@@ -494,7 +493,7 @@ footer {
   justify-self: center;
   width: 40%;
   flex: 1 1 400px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 1rem rgba(52, 52, 52, 0.2);
   margin: 40px;
 }
@@ -527,20 +526,6 @@ footer {
 input::placeholder, textarea::placeholder {
   color: #303030;
   font-size: 0.8rem;
-}
-
-input[type=submit] {
-  width: 130px;
-  height: 40px;
-  background-color: #273f27;
-  color: #fff;
-  border: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 0.06rem;
-  cursor: pointer;
-  margin-top: 20px;
 }
 
 textarea {
