@@ -3,6 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import data from "./data_Experience";
 
@@ -39,8 +40,14 @@ function Experience(props) {
         <h2>EXPERIENCE</h2>
         <div className="line-title" />
       </div>
-
       <VerticalTimeline lineColor={"#A7A7A7"}>{cards}</VerticalTimeline>
+      <a
+          href="https://www.linkedin.com/in/danielmgsa/"
+          target="_blank"
+          rel="noreferrer"
+        >
+         <span> Linked </span><LinkedInIcon className="LinkedInIcon" />
+      </a>
     </section>
   );
 }

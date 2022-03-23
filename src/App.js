@@ -25,8 +25,8 @@ function App() {
         <Navbar handleScroll={scrollToSection} />
       </nav>
       <main>
-        <Hero />
-        <About />
+        <Hero handleScroll={scrollToSection} />
+        <About handleScroll={scrollToSection} />
         <Experience />
         <Education />
         <Publications />

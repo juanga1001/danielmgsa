@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Poppins", sans-serif;
   color: #273f27;
   letter-spacing: 0.05rem;
   background-color: #fff;
@@ -30,17 +30,23 @@ h1 {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 5px;
+  line-height: 2.5rem;
+}
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
   font-weight: 400;
   color: #4e4e4e;
   margin-bottom: 20px;
 }
 
 p {
-  font-family: "Libre Franklin";
+  font-family: "Libre Franklin", sans-serif;
   font-size: 0.9rem;
   font-weight: 100;
   color: #4e4e4e;
@@ -48,20 +54,23 @@ p {
   letter-spacing: 0.03rem;
 }
 
-button, .btn-form {
+button,
+.btn-form {
   width: 130px;
   height: 40px;
   background-color: #273f27;
   color: #fff;
   border: none;
-  font-family: "Roboto";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.06rem;
   cursor: pointer;
   margin-top: 20px;
 }
 
-button:hover, .btn-form:hover {
+button:hover,
+.btn-form:hover {
   background-color: #314b31;
   transform: scale(1.02);
 }
@@ -69,7 +78,9 @@ button:hover, .btn-form:hover {
 .App-container {
   width: 100%;
   height: 100%;
+  max-width: 1280px;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 60px auto 60px;
 }
@@ -83,7 +94,7 @@ main {
 }
 
 footer {
-  background-color: #3C3B3B;
+  background-color: #3c3b3b;
 }
 
 .section-title {
@@ -101,7 +112,7 @@ footer {
 /*********** NAVBAR ************/
 /****************************************/
 
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
 
@@ -115,7 +126,7 @@ footer {
   height: 100%;
 }
 
-.Navbar > ul  {
+.Navbar > ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -133,8 +144,11 @@ footer {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 893px) {
-  
+.Navbar > ul > li .link-route:hover {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 980px) {
   .Navbar {
     align-items: flex-start;
     z-index: 99;
@@ -144,10 +158,15 @@ footer {
     display: none;
   }
 
-  .icon-nav{
+  .icon-nav {
     font-size: 3rem;
   }
-  
+
+  .mobile-menu{
+    display: flex;
+    align-items: flex-start;
+  }
+
   .mobile-menu > ul {
     display: flex;
     flex-direction: column;
@@ -169,7 +188,7 @@ footer {
     font-size: 2rem;
   }
 
-  .mobile-menu > ul > li:hover{
+  .mobile-menu > ul > li:hover {
     font-weight: bolder;
   }
 
@@ -177,9 +196,10 @@ footer {
     display: flex;
   }
 
-  .mobile-menu-icon{
+  .mobile-menu-icon {
     cursor: pointer;
     z-index: 999;
+    transform: scale(2);
   }
 }
 
@@ -212,6 +232,22 @@ footer {
   color: #5e775e;
 }
 
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cta-container > a > .LinkedInIcon {
+  color: #a4a4a4;
+  transform: scale(1.5);
+  transition: 0.2s ease-in-out;
+}
+
+.cta-container > a > .LinkedInIcon:hover {
+  color: #1166c2;
+  transform: scale(1.6);
+}
 
 /****************************************/
 /*********** ABOUT ************/
@@ -233,6 +269,12 @@ footer {
 .About-content > img {
   flex: 1 1 400px;
   max-width: 400px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem rgba(43, 43, 43, 0.5);
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1014px) {
@@ -267,34 +309,66 @@ footer {
 
 .icon-timeline {
   width: 65px;
+  height: 65px;
   border-radius: 50%;
   border: 3px solid #a7a7a7;
+  background-color: #fff;
 }
+
+.Experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Experience-container > .section-title {
+  align-self: self-start;
+}
+
+.Experience-container > a {
+  margin-top: 50px;
+  display: flex;
+  background-color: #a4a4a4;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transform: scale(1.5);
+  padding: 5px 20px;
+  border-radius: 2px;
+  transition: 0.2s ease-in-out;
+}
+
+.Experience-container > a:hover {
+  background-color: #1166c2;
+  color: #fff;
+  transform: scale(1.6);
+}
+
 
 /****************************************/
 /*********** EDUCATION ************/
 /****************************************/
 
-.Education-content{
+.Education-content {
   align-items: center;
   justify-content: center;
 }
 
-.Education-card{
-  height: 420px;
+.Education-card {
+  height: 450px;
   width: 280px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   margin-top: 50px;
   position: relative;
 }
 
-.card-header{
+.card-header {
   height: 65px;
   width: 100%;
   background-color: #273f27;
 }
 
-.card-content{
+.card-content {
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -304,23 +378,23 @@ footer {
   margin-top: -65px;
   margin-bottom: 30px;
   align-self: center;
+  ;
 }
 
 .card-content > h3 {
   color: #4e4e4e;
   font-size: 1rem;
   text-transform: uppercase;
-
 }
 
 .card-content > h4 {
-  color: #A7A7A7;
+  color: #a7a7a7;
   font-size: 1rem;
   font-weight: 100;
 }
 
 .card-content > p {
-  font-size: 0.9rem ;
+  font-size: 0.9rem;
   font-weight: 100;
   margin-bottom: 40px;
 }
@@ -332,7 +406,7 @@ footer {
   width: 100px;
   padding-top: 10px;
   position: absolute;
-  top: 360px;
+  top: 400px;
 }
 
 /* Carousel */
@@ -341,7 +415,7 @@ footer {
   color: #fff !important;
 }
 
-.rec.rec-dot_active{
+.rec.rec-dot_active {
   background-color: #5e775e;
   box-shadow: 0 0 1px 3px rgb(37, 68, 37) !important;
 }
@@ -350,7 +424,7 @@ footer {
 /*********** PUBLICATIONS ************/
 /****************************************/
 
-.Publications-content{
+.Publications-content {
   margin-top: 50px;
   display: grid;
   gap: 5px;
@@ -359,7 +433,7 @@ footer {
   grid-auto-flow: dense;
 }
 
-.Publication-card{
+.Publication-card {
   width: 100%;
   height: 100%;
   padding: 40px;
@@ -371,7 +445,7 @@ footer {
   margin-top: 20px;
   font-size: 0.9rem;
 }
-.Publication-footer{
+.Publication-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -383,78 +457,88 @@ footer {
 }
 
 .Publication-gray-card {
-  background-color: #F3F3F3;
-  color: #4E4E4E;
+  background-color: #f3f3f3;
+  color: #4e4e4e;
 }
 
 .Publication-green-card {
-  background-color: #C5D8C5;
-  color: #273F27;
+  background-color: #c5d8c5;
+  color: #273f27;
 }
 
 /****************************************/
 /*********** CONTACT ************/
 /****************************************/
 
-.Contact-section{
+.Contact-section {
   display: flex;
   position: relative;
   flex-direction: column;
 }
 
-
-.Contact-content{
+.Contact-content {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background-image: url("https://i.postimg.cc/vHx4RhrM/img-27.jpg");
+  background-size: cover;
+  background-position: center;
   background-color: rgba(39, 63, 39, 0.2);
-  width: 80%;
+  width: 100%;
   align-self: center;
-
 }
 
-.Contact-content-right{
-  padding: 70px;
+.Contact-content-right {
+  padding: 50px;
   align-self: top;
   justify-self: center;
-  width: 65%;
+  width: 40%;
   flex: 1 1 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1rem rgba(52, 52, 52, 0.2);
+  margin: 40px;
 }
 
-.Contact-content-left{
-  padding: 70px;
+.Contact-content-left {
   align-self: center;
-  width: 35%;
+  height: 100%;
+  width: 60%;
   flex: 1 1 auto;
-  max-width: 400px;
-  background-color: #273f27;
-  filter: drop-shadow(0 0 0.2rem rgb(82, 82, 82));
-  color: #fff;
+  max-width: 500px;
 }
+
+
 
 /* form */
 .input-box {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #273F27;
-  margin: 5px ;
-  height: 45px;
+  border-bottom: 1px solid #273f27;
+  margin: 5px;
+  height: 35px;
   padding: 0 10px;
   text-align: left;
-  box-sizing:border-box;
-  color: #4E4E4E;
+  box-sizing: border-box;
+  color: #303030;
   font-family: "Libre Franklin";
   min-width: 200px;
 }
 
-textarea{
-  width: 95%;
-  margin: 5px;
-  margin-top: 30px !important;
-  padding: 0 10px;
+input::placeholder, textarea::placeholder {
+  color: #303030;
+  font-size: 0.8rem;
 }
 
-.input-box:focus{
+
+textarea {
+  width: 95%;
+  margin: 5px;
+  margin-top: 20px !important;
+  padding: 0 10px;
+  color: #303030;
+}
+
+.input-box:focus {
   outline: none;
 }
 
@@ -462,21 +546,21 @@ textarea{
 /*********** FOOTER ************/
 /****************************************/
 
-.Footer-container{
-  color: #F3F3F3;
-  background-color: #4E4E4E;
+.Footer-container {
+  color: #f3f3f3;
+  background-color: #4e4e4e;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Footer-nav{
+.Footer-nav {
   width: 80%;
   padding-bottom: 15px;
 }
 
-.Footer-nav > ul{
+.Footer-nav > ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -486,16 +570,20 @@ textarea{
   cursor: pointer;
 }
 
-.link-route{
+.link-route {
   color: inherit;
   text-decoration: none;
 }
 
-.Footer-nav > ul > li:hover, .link-route:hover {
-  color:#C5D8C5;
+.Footer-nav > ul > li:hover {
+  color: #c5d8c5;
 }
 
-.Footer-info{
+.Footer-nav > ul > li .link-route:hover {
+  color: #c5d8c5;
+}
+
+.Footer-info {
   background-color: #303030;
   width: 100%;
   padding: 10px;
@@ -523,7 +611,7 @@ textarea{
 }
 
 @media only screen and (max-width: 900px) {
-  .Footer-nav{
+  .Footer-nav {
     width: 100%;
     padding-bottom: 15px;
   }
@@ -533,7 +621,7 @@ textarea{
 /*********** GALLERY ************/
 /****************************************/
 
-.Gallery-container{
+.Gallery-container {
   width: 100%;
   height: 100vh;
   padding: 20px 50px;
@@ -541,7 +629,7 @@ textarea{
   flex-direction: column;
 }
 
-.Gallery-nav{
+.Gallery-nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -560,22 +648,21 @@ textarea{
   font-weight: 600;
 }
 
-.Gallery-content{
+.Gallery-content {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
-  
 }
-.item{
+.item {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.1s ease-in-out;
 }
 
-.item:hover{
+.item:hover {
   transform: scale(1.01);
 }
 .horizontal {
@@ -590,7 +677,3 @@ textarea{
   grid-column: span 3;
   grid-row: span 2;
 }
-
-
-
-

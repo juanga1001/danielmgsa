@@ -1,4 +1,4 @@
-import aboutPhoto from "../images/about_daniel.png";
+import aboutPhoto from "../images/about_daniel.jpeg";
 
 function About(props) {
   return (

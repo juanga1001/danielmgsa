@@ -1,4 +1,4 @@
-import Form from "./Form"
+import Form from "./Form";
 
 function Publications(props) {
 
@@ -10,11 +10,11 @@ function Publications(props) {
       </div>
       <div className="Contact-content">
         <div className="Contact-content-left">
-          <h2>LET'S CHANGE THE WORLD</h2>
+      
         </div>
         <div className="Contact-content-right">
           <h2>GET IN TOUCH WITH ME </h2>
-          <Form/>
+          <Form />
         </div>
       </div>
     </section>
