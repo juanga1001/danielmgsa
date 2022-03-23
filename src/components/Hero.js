@@ -8,7 +8,7 @@ function Hero(props) {
 
       <div className="Hero-info">
         <h1>
-          DANIEL <span>MARTÍNEZ</span>
+          DANIEL <span>MARTÍNEZ GARCÍA</span>
         </h1>
         <h4>
           Harvard Grad '17, '21, Social Studies, International Education Policy

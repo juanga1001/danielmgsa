@@ -9,10 +9,10 @@ export default function Form(props) {
 
     emailjs
       .sendForm(
-        "service_xojsxpi",
-        "template_sp692sq",
+        "service_f7ozohn",
+        "template_1u9dxxk",
         e.target,
-        "2i2gazxtl-n-gnf7y"
+        "870Am9xkZg9WkB_PC"
       )
       .then(
         (result) => {

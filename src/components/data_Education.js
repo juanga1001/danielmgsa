@@ -66,7 +66,7 @@ const data = [
     title: "HIGH SCHOOL",
     subtitle: "John D. O’Bryant High School",
     description:
-      "Actividades y grupos: President of the debate and History Club, member of the Robotics and Soccer teams.",
+      "President of the debate and History Club, member of the Robotics and Soccer teams.",
     date: "2009 - 2013",
     imgage:
       "https://pbs.twimg.com/profile_images/1185276726408110081/vnvwZXMw_400x400.jpg",
