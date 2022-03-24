@@ -36,7 +36,7 @@ function About(props) {
             CONTACT
           </button>
         </div>
-        <img src={aboutPhoto} alt="danielphoto" />
+        <img src={aboutPhoto} alt="daniel martinez graduation education hgse" />
       </div>
     </section>
   );

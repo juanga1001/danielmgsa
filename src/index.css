@@ -55,7 +55,10 @@ p {
 }
 
 button,
-.btn-form, input[type=button], input[type=submit], input[type=reset] {
+.btn-form,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   width: 130px;
   height: 40px;
   background-color: #273f27;
@@ -162,7 +165,7 @@ footer {
     font-size: 3rem;
   }
 
-  .mobile-menu{
+  .mobile-menu {
     display: flex;
     align-items: flex-start;
   }
@@ -344,7 +347,6 @@ footer {
   transform: scale(1.6);
 }
 
-
 /****************************************/
 /*********** EDUCATION ************/
 /****************************************/
@@ -378,7 +380,6 @@ footer {
   margin-top: -65px;
   margin-bottom: 30px;
   align-self: center;
-  ;
 }
 
 .card-content > h3 {
@@ -506,8 +507,6 @@ footer {
   max-width: 500px;
 }
 
-
-
 /* form */
 .input-box {
   background: transparent;
@@ -523,7 +522,8 @@ footer {
   min-width: 200px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #303030;
   font-size: 0.8rem;
 }

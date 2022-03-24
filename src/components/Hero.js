@@ -4,7 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Hero(props) {
   return (
     <section className="Hero-container">
-      <img src={daniel} alt=""></img>
+      <img src={daniel} alt="daniel alejandro martinez profile"></img>
 
       <div className="Hero-info">
         <h1>
@@ -32,7 +32,7 @@ function Hero(props) {
           >
             <LinkedInIcon className="LinkedInIcon" />
           </a>
-          </div>
+        </div>
       </div>
     </section>
   );

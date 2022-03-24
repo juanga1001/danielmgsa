@@ -13,7 +13,7 @@ function Gallery(props) {
       <img
         key={img.id}
         className={`item ${img.classes}`}
-        alt=""
+        alt={img.alt}
         src={`${img.imageUrl}`}
       ></img>
     );
@@ -32,9 +32,7 @@ function Gallery(props) {
         </ul>
       </div>
 
-      <div className="Gallery-content">
-      {images}
-      </div>
+      <div className="Gallery-content">{images}</div>
     </section>
   );
 }
