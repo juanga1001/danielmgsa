@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "danielm"
-  }
+    "default": "danielm",
+    "danielmartinez": "danielm"
+  },
+  "targets": {}
 }
