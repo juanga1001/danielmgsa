@@ -46,10 +46,10 @@ const data = [
 
   {
     id: 5,
-    title: "HISTORY PHILOSOPHY AND CUBAN BIODIVERSITY",
+    title: "HISTORY, PHILOSOPHY AND CUBAN BIODIVERSITY",
     subtitle: "Universidad de la Habana",
     description:
-      "Studied History of Philosophy, Cuban-American Relations, and Cuban Biodiversity",
+      "Studied Semester Abroad: History of Philosophy, Cuban-American Relations, and Cuban Biodiversity",
     date: "2015",
     alt: "Universidad de la Habana Logo",
     imgage:
