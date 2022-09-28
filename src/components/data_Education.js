@@ -8,7 +8,7 @@ const data = [
     date: "2020 - 2021",
     alt: "Harvard University Graduate School of Education - HGSE Logo",
     imgage:
-      "https://media-exp1.licdn.com/dms/image/C560BAQEX9qhm8aGMJw/company-logo_100_100/0/1610144771060?e=1655337600&v=beta&t=ZC7FeqmnEgHkvCAUBZSQ2GFoLehNlI1y_a8SHJpj3Yk",
+      "https://i.postimg.cc/CMz6T4Td/HGSE.jpg",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const data = [
     date: "2017",
     alt: "DRCLAS - David Rockefeller Center for Latin American Studies at Harvard University Logo",
     imgage:
-      "https://scontent.fpei3-1.fna.fbcdn.net/v/t1.6435-9/109340909_10164155288610323_5385382340317727785_n.png?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=k5Ra_m1tMSUAX9FXmUZ&_nc_ht=scontent.fpei3-1.fna&oh=00_AT8tiskQGVCN2h3VPPBy8Qc8I129dEIc3-5ZdhLQUJykDw&oe=625BC4F7",
+      "https://i.postimg.cc/RZQCfpm8/DRCLAS-David-Rockefeller-Center-Revista-Logo.png",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const data = [
     date: "2016",
     alt: "Harvard Business School Logo",
     imgage:
-      "https://media-exp1.licdn.com/dms/image/C4D0BAQGSIL8O8qpfVw/company-logo_100_100/0/1640264247246?e=1655337600&v=beta&t=te-xV_BC_O4Pbf5iuH-QaZu4pOKI8YuDiIMPP2SAm8k",
+      "https://i.postimg.cc/zXjy5T1H/HBS.jpg",
   },
 
   {
@@ -53,7 +53,7 @@ const data = [
     date: "2015",
     alt: "Universidad de la Habana Logo",
     imgage:
-      "https://media-exp1.licdn.com/dms/image/C510BAQHfrsHuFi8uLw/company-logo_100_100/0/1519868332338?e=1655337600&v=beta&t=iew6auoNgjUc0hWmeq_VPMp4HiQqARq9LmMMP3janUs",
+      "https://i.postimg.cc/Sxr2qxnJ/universidad-de-la-habana-logo.jpg",
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const data = [
     date: "2012 - 2012",
     alt: "Massachusetts Institute of Technology Logo",
     imgage:
-      "https://media-exp1.licdn.com/dms/image/C4E0BAQHBK7qvTvtkZA/company-logo_100_100/0/1519856414204?e=1655337600&v=beta&t=TDyTph_J2keL0GJoiVjGyaeAG2HXI_Pep8X3S2EQGHc",
+      "https://i.postimg.cc/MXJxfVFq/MITES-MIT-logo.png",
   },
 
   {
@@ -76,7 +76,7 @@ const data = [
     date: "2009 - 2013",
     alt: "John D. O’Bryant High School Logo",
     imgage:
-      "https://pbs.twimg.com/profile_images/1185276726408110081/vnvwZXMw_400x400.jpg",
+      "https://i.postimg.cc/FFdLcvBB/Obryant-high-school-logo.jpg",
   },
 ];
 
